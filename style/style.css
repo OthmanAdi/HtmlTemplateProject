@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.pageBody {
+    height: 100vh;
+    background-color: #eee6e2;
+    /*text-align: center;*/
+}
+
+.buttonGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.buttonList {
+    border: 0;
+    border-radius: 10%;
+    width: min-content;
+    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.47);
+    text-align: center;
+}
+
+.someButton {
+    width: 12em;
+    height: 12em;
+    padding: 1em;
+    box-shadow: 50px 80px 1px #f2c5de;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 10%;
+    transition: background-color 5s, box-shadow 1s, font-size 2s ease-in-out;
+}
+
+.someButton:focus {
+    background-color: #b2def1;
+    box-shadow: 50px 80px 20px #a521b6;
+    transition: background-color 5s, box-shadow 1s, font-size 2s ease-in-out;
+}
+
+.someButton:hover {
+    font-family: Monaco, monospace;
+    font-size: 1em;
+    transition: font-size 1s ease-in-out;
+    text-decoration: underline;
+    text-shadow: 20px 20px 5px rgba(160, 48, 48, 0.47);
+}
+
+/*Flexbox Navbar*/
+.container1 {
+    max-width: 1200px;
+}
+
+.nav {
+    position: fixed;
+    background-color: #b2def1;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.nav .container1 {
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .flexUL {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    padding-right: 20px;
+    font-size: 1.2em;
+    font-family: Helvetica, serif;
+    text-decoration: none; /*removing the underlining*/
+}
+
+a:hover {
+    text-decoration-color: white !important;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: red;
+    text-decoration: underline;
+}
